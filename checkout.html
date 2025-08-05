@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Rebrand - Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <img src="Nike Logo.png" alt="Nike Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="page-content">
+    <h1>Checkout</h1>
+
+    <div id="orderSummary"></div>
+
+    <form id="checkoutForm" class="checkout-form">
+      <h2>Shipping Information</h2>
+      <input type="text" id="fullName" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <input type="text" id="address" placeholder="Shipping Address" required>
+      <input type="text" id="city" placeholder="City" required>
+      <input type="text" id="postal" placeholder="Postal Code" required>
+
+      <h2>Payment Method</h2>
+      <select id="paymentMethod" required>
+        <option value="">Select Payment Method</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="cod">Cash on Delivery</option>
+      </select>
+      
+      <div id="cardDetails" style="display: none;">
+        <input type="text" placeholder="Card Number" id="cardNumber">
+        <input type="text" placeholder="MM/YY" id="expiry">
+        <input type="text" placeholder="CVV" id="cvv">
+      </div>
+
+      <button type="submit" class="cta-btn">Place Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Nike Rebrand.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

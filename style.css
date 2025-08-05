@@ -1,0 +1,228 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.navbar a:hover {
+  color: orange;
+}
+.logo {
+  width: 80px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, teal, orange);
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.cta-btn {
+  background: teal;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cta-btn:hover {
+  background: darkcyan;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.product {
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.product h3 {
+  margin: 10px 0;
+}
+.product button {
+  background: orange;
+  color: black;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.product button:hover {
+  background: darkorange;
+}
+
+/* Cart */
+#cartItems {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Checkout */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 30px auto;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 15px;
+}
+.checkout-form input,
+.checkout-form select {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #111;
+  color: white;
+}
+.checkout-form input::placeholder {
+  color: gray;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 30px auto;
+  background: #222;
+  padding: 25px;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #111;
+  color: white;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+
+.form-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+}
+
+.form-container input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: none;
+}
+
+.form-container button {
+  background: teal;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 95%;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background: orange;
+}
+
+#passwordStrength {
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+
+/* Navbar User Section */
+#userSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#userSection span {
+  color: white;
+  font-weight: bold;
+}
+
+#userSection button {
+  background: teal;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+#userSection button:hover {
+  background: orange;
+  color: black;
+}

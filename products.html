@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Rebrand - Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <img src="Nike Logo.png" alt="Nike Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="page-content">
+    <h1>Our Products</h1>
+
+    <!-- Search and Filter -->
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="shoes">Shoes</option>
+        <option value="clothing">Clothing</option>
+        <option value="accessories">Accessories</option>
+      </select>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="productsContainer" class="products-grid">
+
+      <!-- 8 Products -->
+      <div class="product">
+        <img src="Nike Air Zoom.png" alt="Nike Air Zoom Pegasus">
+        <h3>Nike Air Zoom Pegasus</h3>
+        <p>$120</p>
+        <button onclick="addToCart(1)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="Nike revolution 5.png" alt="Nike Revolution 5">
+        <h3>Nike Revolution 5</h3>
+        <p>$90</p>
+        <button onclick="addToCart(2)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="Nike Dri-FIT Tee.png" alt="Nike Dri-FIT Tee">
+        <h3>Nike Dri-FIT Tee</h3>
+        <p>$40</p>
+        <button onclick="addToCart(3)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="Nike Pro Shorts.png" alt="Nike Pro Shorts">
+        <h3>Nike Pro Shorts</h3>
+        <p>$35</p>
+        <button onclick="addToCart(4)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="Nike Backpack.png" alt="Nike Backpack">
+        <h3>Nike Backpack</h3>
+        <p>$70</p>
+        <button onclick="addToCart(5)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="Nike Running Cap.png" alt="Nike Running Cap">
+        <h3>Nike Running Cap</h3>
+        <p>$25</p>
+        <button onclick="addToCart(6)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="Nike Phantom Boots.png" alt="Nike Phantom Boots">
+        <h3>Nike Phantom Boots</h3>
+        <p>$150</p>
+        <button onclick="addToCart(7)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="Nike Hoodie.png" alt="Nike Hoodie">
+        <h3>Nike Hoodie</h3>
+        <p>$60</p>
+        <button onclick="addToCart(8)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="Nike Dri-FIT Academy Pants.png" alt="Nike Dri-FIT Academy Pants">
+        <h3>Nike Dri-FIT Academy Pants</h3>
+        <p>$50</p>
+        <button onclick="addToCart(9)">Add to Cart</button>
+      </div>
+
+       <div class="product">
+        <img src="Nike Air Force 1.png" alt="Nike Air Force 1">
+        <h3>Nike Air Force 1</h3>
+        <p>$300</p>
+        <button onclick="addToCart(10)">Add to Cart</button>
+      </div>
+
+       <div class="product">
+        <img src="Nike Dunk Low.png" alt="Nike Dunk Low">
+        <h3>Nike Dunk Low</h3>
+        <p>$200</p>
+        <button onclick="addToCart(11)">Add to Cart</button>
+      </div>
+
+       <div class="product">
+        <img src="Nike Premier League Soccer Ball.png" alt="Nike Premier League Soccer Ball">
+        <h3>Nike Premier League Soccer Ball</h3>
+        <p>$400</p>
+        <button onclick="addToCart(12)">Add to Cart</button>
+      </div>
+
+       <div class="product">
+        <img src="Nike Water Bottle.png" alt="Nike Water Bottle">
+        <h3>Nike Water Bottle</h3>
+        <p>$170</p>
+        <button onclick="addToCart(13)">Add to Cart</button>
+      </div>
+
+       <div class="product">
+        <img src="Nike Heritage Waist Pack.png" alt="Nike Heritage Waist Pack">
+        <h3>Nike Heritage Waist Pack</h3>
+        <p>$200</p>
+        <button onclick="addToCart(14)">Add to Cart</button>
+      </div>
+
+       <div class="product">
+        <img src="Nike Running Cap.png" alt="Nike Running Cap">
+        <h3>Nike Running Cap.png</h3>
+        <p>$130</p>
+        <button onclick="addToCart(15)">Add to Cart</button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Nike Rebrand.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

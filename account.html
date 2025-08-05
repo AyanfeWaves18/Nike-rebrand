@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2 id="formTitle">Sign Up</h2>
+    <form id="signupForm">
+      <input type="text" id="signupName" placeholder="Full Name" required>
+      <input type="email" id="signupEmail" placeholder="Email" required>
+      <input type="tel" id="signupPhone" placeholder="Phone Number" required>
+      <input type="password" id="signupPassword" placeholder="Password" required>
+      <input type="password" id="signupConfirm" placeholder="Confirm Password" required>
+      <p id="passwordStrength"></p>
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+    </form>
+
+    <form id="loginForm" style="display:none;">
+      <input type="text" id="loginUser" placeholder="Email or Phone" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p><a href="#" id="forgotPasswordLink">Forgot Password?</a></p>
+      <p>Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+    </form>
+
+    <form id="forgotForm" style="display:none;">
+      <input type="email" id="forgotEmail" placeholder="Enter your Email" required>
+      <button type="submit">Reset Password</button>
+      <p><a href="#" id="backToLogin">Back to Login</a></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
