@@ -7,8 +7,7 @@ I chose **Nike**, giving it a sleek, modern look while adding useful e-commerce 
 ---
 
 ## 🌐 Live Demo
-[View My Project](https://your-nike-rebrand.vercel.app)  
-*(Replace the above link with your actual Vercel link once deployed)*
+[View My Project](https://nike-rebrand-lemon.vercel.app/)  
 
 ---
 
@@ -42,6 +41,10 @@ Nike-Rebrand/
 ├── products.html       # Product listing with filters and cart
 ├── about.html          # About Nike page
 ├── contact.html        # Contact form page
+├── style.css           # Stylesheet
+├── script.js           # Core interactivity & logic
+├── assets/             # Logos, product images, icons
+└── README.md           # Project documentation
 ├── style.css           # Stylesheet
 ├── script.js           # Core interactivity & logic
 ├── assets/             # Logos, product images, icons
